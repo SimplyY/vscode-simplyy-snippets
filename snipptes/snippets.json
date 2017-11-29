@@ -1,0 +1,972 @@
+{
+  "css in html": {
+    "prefix": "stylecss",
+    "body": "<style type=\"text/css\">\n\t$1\n</style>",
+    "description": "css in html"
+  },
+  "Anchor": {
+    "prefix": "a",
+    "body": "<a href=\"${1:#}\">$2</a>$0",
+    "description": "Anchor"
+  },
+  "Abbreviation": {
+    "prefix": "abbr",
+    "body": "<abbr title=\"$1\">$2</abbr>$0",
+    "description": "Abbreviation"
+  },
+  "Address": {
+    "prefix": "address",
+    "body": "<address ${1:className=\"$2\"}>\n\t$3\n</address>",
+    "description": "Address"
+  },
+  "Area": {
+    "prefix": "area",
+    "body": "<area ${1:shape=\"${2:default}\"} coords=\"$3\" ${4:href=\"${5:#}\"} />$0",
+    "description": "Area"
+  },
+  "Article": {
+    "prefix": "article",
+    "body": "<article className=\"$1\">\n\t$2\n</article>",
+    "description": "Article"
+  },
+  "Aside": {
+    "prefix": "aside",
+    "body": "<aside className=\"$1\">\n\t$2\n</aside>",
+    "description": "Aside"
+  },
+  "Audio": {
+    "prefix": "audio",
+    "body": "<audio src=\"$1\">\n\t$2\n</audio>",
+    "description": "Audio"
+  },
+  "Body": {
+    "prefix": "body",
+    "body": "<body>\n\t$1\n</body>",
+    "description": "Body"
+  },
+  "Bold": {
+    "prefix": "b",
+    "body": "<b>$1</b>$0",
+    "description": "Bold"
+  },
+  "Base": {
+    "prefix": "base",
+    "body": "<base href=\"${1:#}\" target=\"${2:_blank}\" />$0",
+    "description": "Base"
+  },
+  "Blockquote": {
+    "prefix": "blockquote",
+    "body": "<blockquote cite=\"${1:http://}\">\n\t$2\n</blockquote>",
+    "description": "Blockquote"
+  },
+  "Line Breaker": {
+    "prefix": "br",
+    "body": "<br>",
+    "description": "Line Breaker"
+  },
+  "Button": {
+    "prefix": "button",
+    "body": "<button type=\"${1:button}\"${2: name=\"${3:button}\"}>$4</button>$0",
+    "description": "Button"
+  },
+  "Canvas": {
+    "prefix": "canvas",
+    "body": "<canvas id=\"${1:canvas}\" width=\"${2:300}\" height=\"${3:300}\">$4</canvas>$0",
+    "description": "Canvas"
+  },
+  "Caption": {
+    "prefix": "caption",
+    "body": "<caption>$1</caption>$0",
+    "description": "Caption"
+  },
+  "Citation": {
+    "prefix": "cite",
+    "body": "<cite>$1</cite>$0",
+    "description": "Citation"
+  },
+  "Code": {
+    "prefix": "code",
+    "body": "<code>$1</code>$0",
+    "description": "Code"
+  },
+  "Column": {
+    "prefix": "col",
+    "body": "<col>$1</col>$0",
+    "description": "Column"
+  },
+  "Column Group": {
+    "prefix": "colgroup",
+    "body": "<colgroup>$1</colgroup>$0",
+    "description": "Column Group"
+  },
+  "Content": {
+    "prefix": "content",
+    "body": "<content select=\"$1\">$2</content>$0",
+    "description": "Content"
+  },
+  "Comment": {
+    "prefix": "--",
+    "body": "<!-- $1 -->$0",
+    "description": "Comment"
+  },
+  "Data": {
+    "prefix": "data",
+    "body": "<data value=\"$1\">$2</data>$0",
+    "description": "Data"
+  },
+  "Data List": {
+    "prefix": "datalist",
+    "body": "<datalist className=\"$1\">\n\t$2\n</datalist>",
+    "description": "Data List"
+  },
+  "Description": {
+    "prefix": "dd",
+    "body": "<dd>$1</dd>$0",
+    "description": "Description"
+  },
+  "Deleted Text": {
+    "prefix": "del",
+    "body": "<del>$1</del>$0",
+    "description": "Deleted Text"
+  },
+  "Details": {
+    "prefix": "details",
+    "body": "<details ${1:open}>$2</details>$0",
+    "description": "Details"
+  },
+  "Definition": {
+    "prefix": "dfn",
+    "body": "<dfn>$1</dfn>$0",
+    "description": "Definition"
+  },
+  "Description List": {
+    "prefix": "dl",
+    "body": "<dl className=\"$1\">\n\t$2\n</dl>",
+    "description": "Description List"
+  },
+  "Definition Term": {
+    "prefix": "dt",
+    "body": "<dt>$1</dt>$0",
+    "description": "Definition Term"
+  },
+  "Div": {
+    "prefix": "div",
+    "body": "<div className=\"$2\">\n\t$3\n</div>",
+    "description": "Div"
+  },
+  "Emphasis": {
+    "prefix": "em",
+    "body": "<em>$1</em>$0",
+    "description": "Emphasis"
+  },
+  "Fieldset": {
+    "prefix": "fieldset",
+    "body": "<fieldset>$1</fieldset>$0",
+    "description": "Fieldset"
+  },
+  "Figure Caption": {
+    "prefix": "figcaption",
+    "body": "<figcaption>$1</figcaption>$0",
+    "description": "Figure Caption"
+  },
+  "Figure": {
+    "prefix": "figure",
+    "body": "<figure>$1</figure>$0",
+    "description": "Figure"
+  },
+  "Footer": {
+    "prefix": "footer",
+    "body": "<footer>$1</footer>$0",
+    "description": "Footer"
+  },
+  "Form": {
+    "prefix": "form",
+    "body": "<form className=\"$1\" action=\"${2:index.html}\" method=\"${3:post}\">\n\t$4\n</form>",
+    "description": "Form"
+  },
+  "Heading 1": {
+    "prefix": "h1",
+    "body": "<h1>$1</h1>$0",
+    "description": "Heading 1"
+  },
+  "Heading 2": {
+    "prefix": "h2",
+    "body": "<h2>$1</h2>$0",
+    "description": "Heading 2"
+  },
+  "Heading 3": {
+    "prefix": "h3",
+    "body": "<h3>$1</h3>$0",
+    "description": "Heading 3"
+  },
+  "Heading 4": {
+    "prefix": "h4",
+    "body": "<h4>$1</h4>$0",
+    "description": "Heading 4"
+  },
+  "Heading 5": {
+    "prefix": "h5",
+    "body": "<h5>$1</h5>$0",
+    "description": "Heading 5"
+  },
+  "Heading 6": {
+    "prefix": "h6",
+    "body": "<h6>$1</h6>$0",
+    "description": "Heading 6"
+  },
+  "Head": {
+    "prefix": "head",
+    "body": "<head>\n\t$1\n</head>",
+    "description": "Head"
+  },
+  "Header": {
+    "prefix": "header",
+    "body": "<header>\n\t$1\n</header>",
+    "description": "Header"
+  },
+  "Horizontal Rule": {
+    "prefix": "hr",
+    "body": "<hr>",
+    "description": "Horizontal Rule"
+  },
+  "HTML": {
+    "prefix": "html",
+    "body": "<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<title>$1</title>\n\t</head>\n\t<body>\n\t\t$2\n\t</body>\n</html>",
+    "description": "HTML"
+  },
+  "Italic": {
+    "prefix": "i",
+    "body": "<i>$1</i>$0",
+    "description": "Italic"
+  },
+  "Input": {
+    "prefix": "input",
+    "body": "<input type=\"${1:button}\" name=\"${2:name}\" value=\"$3\">$0",
+    "description": "Input"
+  },
+  "Image": {
+    "prefix": "img",
+    "body": "<img src=\"$1\" alt=\"$2\" />$0",
+    "description": "Image"
+  },
+  "Inserted Text": {
+    "prefix": "ins",
+    "body": "<ins>$1</ins>$0",
+    "description": "Inserted Text"
+  },
+  "Keyboard Input": {
+    "prefix": "kbd",
+    "body": "<kbd>$1</kbd>$0",
+    "description": "Keyboard Input"
+  },
+  "Keygen": {
+    "prefix": "keygen",
+    "body": "<keygen name=\"${1:name}\" challenge=\"${2:string}\" keytype=\"${3:RSA}\" keyparams=\"${4:medium}\">$0",
+    "description": "Keygen"
+  },
+  "Label": {
+    "prefix": "label",
+    "body": "<label${1: for=\"$2\"}>$3</label>$0",
+    "description": "Label"
+  },
+  "Legend": {
+    "prefix": "legend",
+    "body": "<legend>$1</legend>$0",
+    "description": "Legend"
+  },
+  "List Item": {
+    "prefix": "li",
+    "body": "<li>$1</li>$0",
+    "description": "List Item"
+  },
+  "Link": {
+    "prefix": "link",
+    "body": "<link rel=\"${1:stylesheet}\" href=\"${2:/css/master.css}\" media=\"${3:screen}\" title=\"${4:no title}\" charset=\"${5:utf-8}\">$0",
+    "description": "Link"
+  },
+  "Main": {
+    "prefix": "main",
+    "body": "<main>\n\t$1\n</main>",
+    "description": "Main"
+  },
+  "Map": {
+    "prefix": "map",
+    "body": "<map>\n\t$1\n</map>",
+    "description": "Map"
+  },
+  "Mark": {
+    "prefix": "mark",
+    "body": "<mark>$1</mark>$0",
+    "description": "Mark"
+  },
+  "Menu": {
+    "prefix": "menu",
+    "body": "<menu>\n\t$1\n</menu>",
+    "description": "Menu"
+  },
+  "Menu Item": {
+    "prefix": "menuitem",
+    "body": "<menuitem type=\"${1:command}\" label=\"${2:Save}\">$0",
+    "description": "Menu Item"
+  },
+  "Mail Anchor": {
+    "prefix": "mailto",
+    "body": "<a href=\"mailto:${1:joe@example.com}?subject=${2:feedback}\">${3:email me}</a>$0",
+    "description": "Mail Anchor"
+  },
+  "Navigation": {
+    "prefix": "nav",
+    "body": "<nav>\n\t$1\n</nav>",
+    "description": "Navigation"
+  },
+  "Noscript": {
+    "prefix": "noscript",
+    "body": "<noscript>\n\t$1\n</noscript>",
+    "description": "Noscript"
+  },
+  "Object": {
+    "prefix": "Object",
+    "body": "Object",
+    "description": "Object"
+  },
+  "Ordered List": {
+    "prefix": "ol",
+    "body": "<ol>\n\t$1\n</ol>",
+    "description": "Ordered List"
+  },
+  "Option Group": {
+    "prefix": "optgroup",
+    "body": "<optgroup label=\"${1:Group 1}\">\n\t$2\n</optgroup>",
+    "description": "Option Group"
+  },
+  "Option": {
+    "prefix": "opt",
+    "body": "<option${1: value=\"${2:option}\"}>${3:option}</option>$0",
+    "description": "Option"
+  },
+  "Output": {
+    "prefix": "output",
+    "body": "<output name=\"${1:result}\">$2</output>$0",
+    "description": "Output"
+  },
+  "Paragraph": {
+    "prefix": "p",
+    "body": "<p>\n\t$1\n</p>",
+    "description": "Paragraph"
+  },
+  "Parameter": {
+    "prefix": "param",
+    "body": "<param name=\"${1:foo}\" value=\"${2:bar}\">$0",
+    "description": "Parameter"
+  },
+  "Preformatted Text": {
+    "prefix": "pre",
+    "body": "<pre>\n\t$1\n</pre>",
+    "description": "Preformatted Text"
+  },
+  "Progress": {
+    "prefix": "progress",
+    "body": "<progress value=\"${1:50}\" max=\"${2:100}\">${3:50%}</progress>$0",
+    "description": "Progress"
+  },
+  "Quote": {
+    "prefix": "q",
+    "body": "<q cite=\"$1\">$2</q>$0",
+    "description": "Quote"
+  },
+  "Script": {
+    "prefix": "script",
+    "body": "<script${1: type=\"${2:text/javascript}\"}>\n\t$3\n</script>",
+    "description": "Script"
+  },
+  "Script With External Source": {
+    "prefix": "scriptsrc",
+    "body": "<script src=\"$1\" charset=\"${2:utf-8}\"></script>$0",
+    "description": "Script With External Source"
+  },
+  "Section": {
+    "prefix": "section",
+    "body": "<section>\n\t$1\n</section>",
+    "description": "Section"
+  },
+  "Select": {
+    "prefix": "select",
+    "body": "<select className=\"$1\" name=\"$2\">\n\t$3\n</select>",
+    "description": "Select"
+  },
+  "Small": {
+    "prefix": "small",
+    "body": "<small>$1</small>$0",
+    "description": "Small"
+  },
+  "Source": {
+    "prefix": "source",
+    "body": "<source src=\"${1:http://}\" type=\"${2:mimetype}\">$0",
+    "description": "Source"
+  },
+  "Span": {
+    "prefix": "span",
+    "body": "<span>$1</span>$0",
+    "description": "Span"
+  },
+  "Strong": {
+    "prefix": "strong",
+    "body": "<strong>$1</strong>$0",
+    "description": "Strong"
+  },
+  "Style": {
+    "prefix": "style",
+    "body": "<style media=\"screen\">\n\t$1\n</style>",
+    "description": "Style"
+  },
+  "Subscript": {
+    "prefix": "sub",
+    "body": "<sub>$1</sub>$0",
+    "description": "Subscript"
+  },
+  "Summary": {
+    "prefix": "summary",
+    "body": "<summary>$1</summary>$0",
+    "description": "Summary"
+  },
+  "Superscript": {
+    "prefix": "sup",
+    "body": "<sup>$1</sup>$0",
+    "description": "Superscript"
+  },
+  "Time": {
+    "prefix": "time",
+    "body": "<time>$1</time>$0",
+    "description": "Time"
+  },
+  "Title": {
+    "prefix": "title",
+    "body": "<title>${1:Page Title}</title>$0",
+    "description": "Title"
+  },
+  "Track": {
+    "prefix": "track",
+    "body": "<track kind=\"${1:subtitles}\" src=\"${2:sampleSubtitles_en.srt}\" srclang=\"${3:en}\">$0",
+    "description": "Track"
+  },
+  "array.map arrow": {
+    "prefix": "mapa",
+    "body": "map(item => ${0:item})",
+    "description": "array.map arrow"
+  },
+  "array.filter muti arrow f": {
+    "prefix": "filterma",
+    "body": "filter(${2:item} => {\n\t${0:// body...maybe empty}\n\treturn\n})",
+    "description": "array.filter muti arrow f"
+  },
+  "array.map muti arrow f": {
+    "prefix": "mapma",
+    "body": "map(${2:item} => {\n\t${0:// body...}\n\treturn\n})",
+    "description": "array.map muti arrow f"
+  },
+  "array.reduce arrow f": {
+    "prefix": "reducea",
+    "body": "reduce((${2:accumulator}, ${3:currentItem}, index) => {\n\t${0:// body...maybe empty}\n\treturn\n})",
+    "description": "array.reduce arrow f"
+  },
+  "array.forEach muti arrow f": {
+    "prefix": "foreachma",
+    "body": "forEach(${2:item} => {\n\t${0:// body...}\n})",
+    "description": "array.forEach muti arrow f"
+  },
+  "sequence from 0 to n": {
+    "prefix": "sequence",
+    "body": "[...Array(${1:length}).keys()]${0}",
+    "description": "sequence from 0 to n"
+  },
+  "array.find arrow f": {
+    "prefix": "finda",
+    "body": "find(item => ${0:item})",
+    "description": "array.find arrow f"
+  },
+  "array.find muti arrow f": {
+    "prefix": "findma",
+    "body": "find((${1:item}) => { \t${0:body} \treturn })",
+    "description": "array.find muti arrow f"
+  },
+  "class": {
+    "prefix": "class",
+    "body": "class ${1:name} {\n\tconstructor() {\n\t\tsuper();\n\t\t${0}\n\t}\n}",
+    "description": "class"
+  },
+  "class extends": {
+    "prefix": "classe",
+    "body": "class ${1:name} extends ${2:base} {\n\tconstructor() {\n\t\tsuper();\n\t\t${0}\n\t}\n}",
+    "description": "class extends"
+  },
+  "class constructor": {
+    "prefix": "constructor class",
+    "body": "constructor() {\n\tsuper();\n}",
+    "description": "class constructor"
+  },
+  "console.dir": {
+    "prefix": "dir",
+    "body": "console.dir($0);",
+    "description": "console.dir"
+  },
+  "console.log": {
+    "prefix": "log",
+    "body": "console.log($0);",
+    "description": "console.log"
+  },
+  "console.error": {
+    "prefix": "error",
+    "body": "console.error($0);",
+    "description": "console.error"
+  },
+  "if statement": {
+    "prefix": "if",
+    "body": "if (${1:condition}) {\n\t${0}\n}",
+    "description": "if statement"
+  },
+  "else statement": {
+    "prefix": "else",
+    "body": "else {\n\t${0}\n}",
+    "description": "else statement"
+  },
+  "else if statement": {
+    "prefix": "elseif",
+    "body": "else if (${1:condition}) {\n\t${0}\n}",
+    "description": "else if statement"
+  },
+  "while loop": {
+    "prefix": "while",
+    "body": "while (${1:condition}) {\n\t${0}\n}",
+    "description": "while loop"
+  },
+  "try/catch": {
+    "prefix": "tryc",
+    "body": "try {\n\t${1}\n} catch (${2:err}) {\n\t\n}",
+    "description": "try/catch"
+  },
+  "try/finally": {
+    "prefix": "tryf",
+    "body": "try {\n\t${0}\n} finally {\n\t\n}",
+    "description": "try/finally"
+  },
+  "try/catch/finally": {
+    "prefix": "trycf",
+    "body": "try {\n\t${1}\n} catch (${2:err}) {\n\t\n} finally {\n\t\n}",
+    "description": "try/catch/finally"
+  },
+  "switch case": {
+    "prefix": "switch",
+    "body": "switch (${1:expression}) {\n\tcase ${2:value}:\n\t\t${0:code}\n\t\tbreak\n\tdefault:\n}",
+    "description": "switch case"
+  },
+  "for(let i)": {
+    "prefix": "for",
+    "body": "for (let ${2:i} = 0; ${2:i} < ${1:array}.length; ${2:i}++) {\n\t${0:// body...}\n}",
+    "description": "for(let i)"
+  },
+  "for in": {
+    "prefix": "forin",
+    "body": "for (let ${1:prop} in ${2:obj}) {\n\tif (${2:obj}.hasOwnProperty(${1:prop})) {\n\t\t${0:// body...}\n\t}\n}",
+    "description": "for in"
+  },
+  "for of": {
+    "prefix": "forof",
+    "body": "for (let ${1:prop} of ${2:obj}) {\n\t\t${0:// body...}\n\t}\n}",
+    "description": "for of"
+  },
+  "anonymous function": {
+    "prefix": "f",
+    "body": "function(${1:args}) {\n\t${0:// body...}\n}",
+    "description": "anonymous function"
+  },
+  "function apply": {
+    "prefix": "apply",
+    "body": "apply(${2:this}, ${3:array})",
+    "description": "function apply"
+  },
+  "function call": {
+    "prefix": "call",
+    "body": "call(${2:this}, ${3:args})",
+    "description": "function call"
+  },
+  "function bind": {
+    "prefix": "bind",
+    "body": "bind(${2:this}, ${3:args})",
+    "description": "function bind"
+  },
+  "immediately-invoked function expression": {
+    "prefix": "iife",
+    "body": "(function(window, document, undefined) {\n\t${0:// body...}\n})(window, document);",
+    "description": "immediately-invoked function expression"
+  },
+  "function with name": {
+    "prefix": "fn",
+    "body": "function ${1:methodName}(${2:args}) {\n\t${0:// body...}\n}",
+    "description": "function with name"
+  },
+  "generator function": {
+    "prefix": "gfn",
+    "body": "function * ${1:methodName}(${2:args}) {\n\t${0:// body...}\n}",
+    "description": "generator function"
+  },
+  "async function": {
+    "prefix": "async",
+    "body": "async function ${1:methodName}(${2:args}) {\n\t${0:// body...}\n}",
+    "description": "async function"
+  },
+  "async arrow function": {
+    "prefix": "asynca",
+    "body": "async() => {\n\t${0:// body...}\n}",
+    "description": "async arrow function"
+  },
+  "add prototype method": {
+    "prefix": "prototype",
+    "body": "prototype.${2:methodName} = function(${3:args}) {\n\t${0:// body...}\n}",
+    "description": "add prototype method"
+  },
+  "jshint ignore": {
+    "prefix": "jshint ignore",
+    "body": "/*jshint ignore:start*/\n${0}\n/*jshint ignore:end*/",
+    "description": "jshint ignore"
+  },
+  "JSON.stringify": {
+    "prefix": "jsons",
+    "body": "JSON.stringify(${0:obj})",
+    "description": "JSON.stringify"
+  },
+  "JSON.parse": {
+    "prefix": "jsonp",
+    "body": "JSON.parse(${0:string})",
+    "description": "JSON.parse"
+  },
+  "jsx comment": {
+    "prefix": "comment",
+    "body": "{/* ${1:A JSX comment} */}",
+    "description": "jsx comment"
+  },
+  "import": {
+    "prefix": "import",
+    "body": "import { ${1} } from '${0}';",
+    "description": "import"
+  },
+  "import default": {
+    "prefix": "importd",
+    "body": "import ${1} from '${0}';",
+    "description": "import default"
+  },
+  "import as": {
+    "prefix": "importa",
+    "body": "import * as ${1} from '${0}';",
+    "description": "import as"
+  },
+  "export default": {
+    "prefix": "exportd",
+    "body": "export default",
+    "description": "export default"
+  },
+  "export const": {
+    "prefix": "exportd",
+    "body": "export const ${}",
+    "description": "export const"
+  },
+  "export function": {
+    "prefix": "exportfun",
+    "body": "export function ${1:methodName}(${2:args}) { \t${0:// body...} }",
+    "description": "export function"
+  },
+  "require": {
+    "prefix": "require",
+    "body": "require('${1:module}');",
+    "description": "require"
+  },
+  "module.exports": {
+    "prefix": "module",
+    "body": "module.exports = ${1:name};",
+    "description": "module.exports"
+  },
+  "Object.assign": {
+    "prefix": "assign",
+    "body": "assign(${1:dest}, ${2:source})",
+    "description": "Object.assign"
+  },
+  "on event handler": {
+    "prefix": "on",
+    "body": "on('${2:event}', (${3:arguments}) => {${0}})",
+    "description": "on event handler"
+  },
+  "setInterval": {
+    "prefix": "setInterval",
+    "body": "setInterval(() => {\n\t${0:// body...}\n}, ${1:delay});",
+    "description": "setInterval"
+  },
+  "setTimeout": {
+    "prefix": "setTimeout",
+    "body": "setTimeout(() => {\n\t${0:// body...}\n}, ${1:delay});",
+    "description": "setTimeout"
+  },
+  "log perfamance": {
+    "prefix": "logperfamance",
+    "body": "let time1 = Date.now();\n${1://do something}\nlet time2 = Date.now();\nconsole.log(time2 - time1);",
+    "description": "log perfamance"
+  },
+  "test async it": {
+    "prefix": "ita",
+    "body": "it('${1:task}', async() => {\n  ${0:// body...}\n});",
+    "description": "test async it"
+  },
+  "Promise.all": {
+    "prefix": "all",
+    "body": "Promise.all(${0})",
+    "description": "Promise.all"
+  },
+  "Promise.then": {
+    "prefix": "then",
+    "body": "then(${1:data} => {${0}})",
+    "description": "Promise.then"
+  },
+  "new Promise": {
+    "prefix": "newp",
+    "body": "new Promise((resolve, reject) => {\n\t${0}\n})",
+    "description": "new Promise"
+  },
+  "Promise.catch": {
+    "prefix": "catch",
+    "body": "catch(${2:error} => {\n\t${0}\n});",
+    "description": "Promise.catch"
+  },
+  "react class": {
+    "prefix": "react class",
+    "body": "import React, { Component } from 'react';\n\nclass ${1:className} extends Component {\n\n  render() {\n    return (\n      <div>\n      </div>\n    );\n  }\n}\n\nexport default ${1:className};",
+    "description": "react class"
+  },
+  "rax class": {
+    "prefix": "rax class",
+    "body": "import { createElement, Component } from 'rax';\nimport View from 'rax-view';\n\nclass ${1:className} extends Component {\n\n  render() {\n    return (\n      <View>\n      </View>\n    );\n  }\n}\n\nexport default ${1:className};",
+    "description": "rax class"
+  },
+  "className react": {
+    "prefix": "className",
+    "body": "className=\"$0\"",
+    "description": "className react"
+  },
+  "setState react": {
+    "prefix": "setState",
+    "body": "setState({\n\t${1}\n});",
+    "description": "setState react"
+  },
+  "preventDefault": {
+    "prefix": "preventDefault",
+    "body": "preventDefault();",
+    "description": "preventDefault"
+  },
+  "stopPropagation": {
+    "prefix": "stopPropagation",
+    "body": "stopPropagation();",
+    "description": "stopPropagation"
+  },
+  "onClick react": {
+    "prefix": "onClick",
+    "body": "onClick={$0}",
+    "description": "onClick react"
+  },
+  "onChange react": {
+    "prefix": "onChange",
+    "body": "onChange={$0}",
+    "description": "onChange react"
+  },
+  "componentWillMount": {
+    "preifx": "componentWillMount",
+    "body": "componentWillMount() {\n\t$0\n}",
+    "description": "componentWillMount"
+  },
+  "componentDidMount": {
+    "prefix": "componentDidMount",
+    "body": "componentDidMount() {\n\t$0\n}",
+    "description": "componentDidMount"
+  },
+  "componentDidUpdate": {
+    "prefix": "componentDidUpdate",
+    "body": "componentDidUpdate() {\n\t$0\n}",
+    "description": "componentDidUpdate"
+  },
+  "yield": {
+    "prefix": "yield",
+    "body": "yield",
+    "description": "yield"
+  },
+  "process": {
+    "prefix": "process",
+    "body": "process",
+    "description": "process"
+  },
+  "parse": {
+    "prefix": "parse",
+    "body": "parse",
+    "description": "parse"
+  },
+  "alert": {
+    "prefix": "alert",
+    "body": "alert",
+    "description": "alert"
+  },
+  "assert": {
+    "prefix": "assert",
+    "body": "assert",
+    "description": "assert"
+  },
+  "return": {
+    "prefix": "return",
+    "body": "return",
+    "description": "return"
+  },
+  "export": {
+    "prefix": "export",
+    "body": "export",
+    "description": "export"
+  },
+  "prototype": {
+    "prefix": "prototype",
+    "body": "prototype",
+    "description": "prototype"
+  },
+  "true": {
+    "prefix": "true",
+    "body": "true",
+    "description": "true"
+  },
+  "false": {
+    "prefix": "false",
+    "body": "false",
+    "description": "false"
+  },
+  "undefined": {
+    "prefix": "undefined",
+    "body": "undefined",
+    "description": "undefined"
+  },
+  "window": {
+    "prefix": "window",
+    "body": "window",
+    "description": "window"
+  },
+  "document": {
+    "prefix": "document",
+    "body": "document",
+    "description": "document"
+  },
+  "const": {
+    "prefix": "const",
+    "body": "const",
+    "description": "const"
+  },
+  "target": {
+    "prefix": "target",
+    "body": "target",
+    "description": "target"
+  },
+  "event": {
+    "prefix": "event",
+    "body": "event",
+    "description": "event"
+  },
+  "fetch": {
+    "prefix": "fetch",
+    "body": "fetch",
+    "description": "fetch"
+  },
+  "length": {
+    "prefix": "length",
+    "body": "length",
+    "description": "length"
+  },
+  "String": {
+    "prefix": "String",
+    "body": "String",
+    "description": "String"
+  },
+  "Number": {
+    "prefix": "Number",
+    "body": "Number",
+    "description": "Number"
+  },
+  "Array": {
+    "prefix": "Array",
+    "body": "Array",
+    "description": "Array"
+  },
+  "Date": {
+    "prefix": "Date",
+    "body": "Date",
+    "description": "Date"
+  },
+  "RegExp": {
+    "prefix": "RegExp",
+    "body": "RegExp",
+    "description": "RegExp"
+  },
+  "typeof equal": {
+    "prefix": "typeof",
+    "body": "typeof ${1:source} === '${2:type}'",
+    "description": "typeof equal"
+  },
+  "typeof": {
+    "prefix": "typeof",
+    "body": "typeof",
+    "description": "typeof"
+  },
+  "instanceof": {
+    "prefix": "instanceof",
+    "body": "instanceof ${2:Object}",
+    "description": "instanceof"
+  },
+  "md code": {
+    "prefix": "code-md",
+    "body": "```\n${0}\n```",
+    "description": "md code"
+  },
+  "html code": {
+    "prefix": "html",
+    "body": "```html\n${0}\n```",
+    "description": "html code"
+  },
+  "css code": {
+    "prefix": "css",
+    "body": "```css\n${0}\n```",
+    "description": "css code"
+  },
+  "js code": {
+    "prefix": "js",
+    "body": "```js\n${0}\n```",
+    "description": "js code"
+  },
+  "cpp code": {
+    "prefix": "cpp",
+    "body": "```cpp\n${0}\n```",
+    "description": "cpp code"
+  },
+  "python code": {
+    "prefix": "python",
+    "body": "```python\n${0}\n```",
+    "description": "python code"
+  },
+  "ruby code": {
+    "prefix": "ruby",
+    "body": "```ruby\n${0}\n```",
+    "description": "ruby code"
+  },
+  "java code": {
+    "prefix": "java",
+    "body": "```java\n${0}\n```",
+    "description": "java code"
+  },
+  "write js snippet": {
+    "prefix": "jssnippet",
+    "body": "\".source.js, .source.ts, .source.jsx\":\n    '$1':\n        'prefix': '$2'\n        'body': \"\"\"\n                $0\n                \"\"\"",
+    "description": "write js snippet"
+  },
+  "write meta snippet": {
+    "prefix": "snippet",
+    "body": "'$1':\n    'prefix': '$2'\n    'body': \"\"\"\n            $0\n            \"\"\"",
+    "description": "write meta snippet"
+  }
+}
