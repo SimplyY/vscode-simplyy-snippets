@@ -466,7 +466,7 @@
   },
   "array.reduce arrow f": {
     "prefix": "reducea",
-    "body": "reduce((${2:accumulator}, ${3:currentItem}, index) => {\n\t${0:// body...maybe empty}\n\treturn\n})",
+    "body": "reduce((${2:acc}, ${3:current}, index) => {\n\t${0:// body...maybe empty}\n\treturn\n}, initialValue)",
     "description": "array.reduce arrow f"
   },
   "array.forEach muti arrow f": {
@@ -666,12 +666,12 @@
   },
   "export const": {
     "prefix": "exportd",
-    "body": "export const ${}",
+    "body": "export const ${0}",
     "description": "export const"
   },
   "export function": {
     "prefix": "exportfun",
-    "body": "export function ${1:methodName}(${2:args}) { \t${0:// body...} }",
+    "body": "export function ${1:methodName}(${2:args}) {\n\t${0:// body...}\n}",
     "description": "export function"
   },
   "require": {
@@ -833,6 +833,11 @@
     "prefix": "true",
     "body": "true",
     "description": "true"
+  },
+  "success": {
+    "prefix": "success",
+    "body": "success",
+    "description": "success"
   },
   "false": {
     "prefix": "false",
